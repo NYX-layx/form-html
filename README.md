@@ -1,1 +1,65 @@
-# form-html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Nama dan Alamat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 300px;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #4CAF50; /* hijau */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #6600ff; /* efek hover */
+    }
+  </style>
+</head>
+<body>
+  <h2>Formulir Data Diri</h2>
+
+  <label for="nama">Nama:</label><br>
+  <input type="text" id="nama" placeholder="Masukkan nama kamu"><br>
+
+  <label for="alamat">Alamat:</label><br>
+  <textarea id="alamat" rows="3" placeholder="Masukkan alamat kamu"></textarea><br>
+
+  <!-- Tombol kirim -->
+  <button onclick="kirimData()">Kirim</button>
+
+  <script>
+    function kirimData() {
+      const nama = document.getElementById('nama').value;
+      const alamat = document.getElementById('alamat').value;
+
+      if (nama === '' || alamat === '') {
+        alert('Harap isi nama dan alamat terlebih dahulu!');
+      } else {
+        window.location.href = 'https://youtu.be/dQw4w9WgXcQ?si=dJudJWJgFsIkvUWe';
+      }
+    }
+  </script>
+</body>
+</html>
